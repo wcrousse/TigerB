@@ -1,0 +1,12 @@
+C:\Users\wrousse\Desktop\TigerB\TigerLexicalAnalyzer\TigerLexicalAnalyzer\bin\Debug\TigerLexicalAnalyzer.exe.config
+C:\Users\wrousse\Desktop\TigerB\TigerLexicalAnalyzer\TigerLexicalAnalyzer\bin\Debug\TigerLexicalAnalyzer.XML
+C:\Users\wrousse\Desktop\TigerB\TigerLexicalAnalyzer\TigerLexicalAnalyzer\bin\Debug\TigerLexicalAnalyzer.exe
+C:\Users\wrousse\Desktop\TigerB\TigerLexicalAnalyzer\TigerLexicalAnalyzer\bin\Debug\TigerLexicalAnalyzer.pdb
+C:\Users\wrousse\Desktop\TigerB\TigerLexicalAnalyzer\TigerLexicalAnalyzer\bin\Debug\FSharp.Core.dll
+C:\Users\wrousse\Desktop\TigerB\TigerLexicalAnalyzer\TigerLexicalAnalyzer\bin\Debug\FsLexYacc.Runtime.dll
+C:\Users\wrousse\Desktop\TigerB\TigerLexicalAnalyzer\TigerLexicalAnalyzer\bin\Debug\FSharp.Core.xml
+C:\Users\wrousse\Desktop\TigerB\TigerLexicalAnalyzer\TigerLexicalAnalyzer\bin\Debug\FsLexYacc.Runtime.xml
+C:\Users\wrousse\Desktop\TigerB\TigerLexicalAnalyzer\TigerLexicalAnalyzer\obj\Debug\TigerLexicalAnalyzer.fsproj.TigerLexicalAnalyzer.exe.config
+C:\Users\wrousse\Desktop\TigerB\TigerLexicalAnalyzer\TigerLexicalAnalyzer\obj\Debug\TigerLexicalAnalyzer.exe
+C:\Users\wrousse\Desktop\TigerB\TigerLexicalAnalyzer\TigerLexicalAnalyzer\obj\Debug\TigerLexicalAnalyzer.pdb
+C:\Users\wrousse\Desktop\TigerB\TigerLexicalAnalyzer\TigerLexicalAnalyzer\obj\Debug\TigerLexicalAnalyzer.fsprojResolveAssemblyReference.cache
