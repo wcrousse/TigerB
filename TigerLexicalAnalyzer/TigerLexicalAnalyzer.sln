@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TigerLexicalAnalyzer", "TigerLexicalAnalyzer\TigerLexicalAnalyzer.fsproj", "{6E67068E-DE7D-404E-BA08-BC6EF590EFD2}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "tigerlex", "tigerlex\tigerlex.fsproj", "{7B225E2B-6A57-4620-9940-7EF5329B2A22}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6E67068E-DE7D-404E-BA08-BC6EF590EFD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E67068E-DE7D-404E-BA08-BC6EF590EFD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E67068E-DE7D-404E-BA08-BC6EF590EFD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B225E2B-6A57-4620-9940-7EF5329B2A22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B225E2B-6A57-4620-9940-7EF5329B2A22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B225E2B-6A57-4620-9940-7EF5329B2A22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B225E2B-6A57-4620-9940-7EF5329B2A22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

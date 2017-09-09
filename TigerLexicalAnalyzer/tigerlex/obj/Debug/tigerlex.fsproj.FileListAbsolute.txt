@@ -1,0 +1,12 @@
+C:\Users\wrousse\Desktop\TigerB\TigerLexicalAnalyzer\tigerlex\obj\Debug\tigerlex.fsproj.tigerlex.exe.config
+C:\Users\wrousse\Desktop\TigerB\TigerLexicalAnalyzer\tigerlex\bin\Debug\App.config
+C:\Users\wrousse\Desktop\TigerB\TigerLexicalAnalyzer\tigerlex\bin\Debug\tigerlex.exe.config
+C:\Users\wrousse\Desktop\TigerB\TigerLexicalAnalyzer\tigerlex\bin\Debug\tigerlex.XML
+C:\Users\wrousse\Desktop\TigerB\TigerLexicalAnalyzer\tigerlex\bin\Debug\tigerlex.exe
+C:\Users\wrousse\Desktop\TigerB\TigerLexicalAnalyzer\tigerlex\bin\Debug\tigerlex.pdb
+C:\Users\wrousse\Desktop\TigerB\TigerLexicalAnalyzer\tigerlex\bin\Debug\FSharp.Core.dll
+C:\Users\wrousse\Desktop\TigerB\TigerLexicalAnalyzer\tigerlex\bin\Debug\FsLexYacc.Runtime.dll
+C:\Users\wrousse\Desktop\TigerB\TigerLexicalAnalyzer\tigerlex\bin\Debug\FSharp.Core.xml
+C:\Users\wrousse\Desktop\TigerB\TigerLexicalAnalyzer\tigerlex\bin\Debug\FsLexYacc.Runtime.xml
+C:\Users\wrousse\Desktop\TigerB\TigerLexicalAnalyzer\tigerlex\obj\Debug\tigerlex.exe
+C:\Users\wrousse\Desktop\TigerB\TigerLexicalAnalyzer\tigerlex\obj\Debug\tigerlex.pdb

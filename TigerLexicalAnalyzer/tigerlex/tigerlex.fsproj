@@ -5,14 +5,14 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>6e67068e-de7d-404e-ba08-bc6ef590efd2</ProjectGuid>
+    <ProjectGuid>7b225e2b-6a57-4620-9940-7ef5329b2a22</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TigerLexicalAnalyzer</RootNamespace>
-    <AssemblyName>TigerLexicalAnalyzer</AssemblyName>
+    <RootNamespace>tigerlex</RootNamespace>
+    <AssemblyName>tigerlex</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFSharpCoreVersion>4.4.0.0</TargetFSharpCoreVersion>
-    <Name>TigerLexicalAnalyzer</Name>
+    <Name>tigerlex</Name>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
@@ -25,7 +25,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Debug\TigerLexicalAnalyzer.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\tigerlex.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -36,7 +36,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Release\TigerLexicalAnalyzer.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\tigerlex.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
@@ -54,19 +54,33 @@
       </PropertyGroup>
     </Otherwise>
   </Choose>
-  <Import Project="..\packages\FsLexYacc.6.0.1\bin\FsLexYacc.targets" />
-  <FsYacc Include="..\LexAndYaccMiniProject\Parser.fsy">
-    <OtherFlags>--module Parser</OtherFlags>
-  </FsYacc>
-  <FsLex Include="..\LexAndYaccMiniProject\Lexer.fsl">
-    <OtherFlags>--unicode</OtherFlags>
-  </FsLex>
   <Import Project="$(FSharpTargetsPath)" />
+  <Import Project="..\packages\FsLexYacc.7.0.6\build\FsLexYacc.targets" Condition="Exists('..\packages\FsLexYacc.7.0.6\build\FsLexYacc.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\FsLexYacc.7.0.6\build\FsLexYacc.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\FsLexYacc.7.0.6\build\FsLexYacc.targets'))" />
+  </Target>
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
     <Compile Include="Program.fs" />
     <None Include="App.config" />
     <Content Include="packages.config" />
+    <FsYacc Include="..\tigerlex\Parser.fsy">
+      <OtherFlags>--module Parser</OtherFlags>
+      <Link>Parser.fsy</Link>
+    </FsYacc>
+    <FsLex Include="..\tigerlex\Lexer.fsl">
+      <OtherFlags>--unicode</OtherFlags>
+      <Link>Lexer.fsl</Link>
+    </FsLex>
+    <Compile Include="Program.fs" />
+    <None Include="App.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Lexer.fsl" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FSharp.Core">
@@ -82,13 +96,6 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
   </ItemGroup>
-  <Import Project="..\packages\FsLexYacc.7.0.6\build\FsLexYacc.targets" Condition="Exists('..\packages\FsLexYacc.7.0.6\build\FsLexYacc.targets')" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\packages\FsLexYacc.7.0.6\build\FsLexYacc.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\FsLexYacc.7.0.6\build\FsLexYacc.targets'))" />
-  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
